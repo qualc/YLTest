@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: PingFang SC-Regular, PingFang SC;
+	font-size: 16px;
+}
+
+body,
+h1,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.line1 {
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.line2 {
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.line3 {
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.layout {
+	.header {
+		display: flex;
+		padding: 24px;
+		justify-content: space-between;
+		align-items: center;
+		height: 60px;
+		background-color: #000;
+		color: #fff;
+
+		.logo {
+			font-size: 24px;
+		}
+		.userinfo {
+			font-size: 16px;
+		}
+	}
+
+	.ant-menu-root {
+		min-height: 100vh;
+	}
+	.content {
+		display: flex;
+		.body {
+			padding: 24px;
+		}
+	}
+}
